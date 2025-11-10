@@ -23,7 +23,9 @@ function getDB() {
 
 export async function saveEntry(entry: HeadacheEntry): Promise<void> {
   const db = await getDB();
-  await db.put(STORE_NAME, entry);
+  // Clone the entry to avoid reactive proxy issues
+  const clonedEntry = JSON.parse(JSON.stringify(entry));
+  await db.put(STORE_NAME, clonedEntry);
 }
 
 export async function getEntry(id: string): Promise<HeadacheEntry | undefined> {

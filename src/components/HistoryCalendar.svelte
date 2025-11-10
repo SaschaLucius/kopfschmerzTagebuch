@@ -139,8 +139,8 @@
 </div>
 
 {#if selectedEntry}
-  <div class="modal-overlay" onclick={closeDetail}>
-    <div class="modal-content" onclick={(e) => e.stopPropagation()}>
+  <div class="modal-overlay" role="button" tabindex="0" onclick={closeDetail} onkeydown={(e) => e.key === 'Escape' && closeDetail()}>
+    <div class="modal-content" role="dialog" aria-modal="true" onclick={(e) => e.stopPropagation()}>
       <h2>Eintrag vom {new Date(selectedEntry.date).toLocaleDateString('de-DE')}</h2>
       
       <div class="detail-section">
