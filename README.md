@@ -39,6 +39,17 @@ A minimal-tap Progressive Web App (PWA) for tracking headache patterns, built wi
 
 ## Installation
 
+### Deployment
+
+This app automatically deploys to GitHub Pages when changes are pushed to the main branch. The GitHub Actions workflow builds and deploys the application.
+
+**To enable GitHub Pages for your fork:**
+1. Go to your repository Settings → Pages
+2. Under "Build and deployment", select "GitHub Actions" as the source
+3. Push to the main branch to trigger the deployment
+
+The app will be available at: `https://[username].github.io/kopfschmerzTagebuch/`
+
 ### Development
 
 ```bash
