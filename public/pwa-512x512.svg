@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#4CAF50" rx="50"/>
+  <circle cx="256" cy="210" r="120" fill="none" stroke="white" stroke-width="20"/>
+  <circle cx="200" cy="195" r="10" fill="white"/>
+  <circle cx="312" cy="195" r="10" fill="white"/>
+  <path d="M 256 260 Q 256 285 230 295 T 256 310" fill="none" stroke="white" stroke-width="8"/>
+  <text x="256" y="420" font-family="Arial, sans-serif" font-size="60" fill="white" text-anchor="middle" font-weight="bold">Kopfschmerz</text>
+  <text x="256" y="470" font-family="Arial, sans-serif" font-size="40" fill="white" text-anchor="middle">Tagebuch</text>
+</svg>

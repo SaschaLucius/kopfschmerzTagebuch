@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
+  <rect width="192" height="192" fill="#4CAF50" rx="20"/>
+  <circle cx="96" cy="80" r="45" fill="none" stroke="white" stroke-width="8"/>
+  <circle cx="70" cy="75" r="4" fill="white"/>
+  <circle cx="122" cy="75" r="4" fill="white"/>
+  <path d="M 96 100 Q 96 110 86 115 T 96 120" fill="none" stroke="white" stroke-width="3"/>
+  <text x="96" y="160" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle" font-weight="bold">Kopfschmerz</text>
+</svg>
