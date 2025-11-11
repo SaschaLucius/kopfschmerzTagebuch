@@ -11,13 +11,19 @@
   function changeDate(days: number) {
     const currentDate = parseDate(date);
     const newDate = addDays(currentDate, days);
-    date = formatDate(newDate);
-    onChange(date);
+    const today = new Date();
+    
+    // Don't allow navigating to future dates
+    if (newDate > today) {
+      return;
+    }
+    
+    const formattedDate = formatDate(newDate);
+    onChange(formattedDate);
   }
 
   function handleDateInput(e: Event) {
     const target = e.target as HTMLInputElement;
-    date = target.value;
     onChange(target.value);
   }
 </script>
