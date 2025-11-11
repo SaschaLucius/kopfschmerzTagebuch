@@ -37,7 +37,8 @@ export function formatDate(date: Date): string {
  * Parse date string to Date object
  */
 export function parseDate(dateStr: string): Date {
-  return new Date(dateStr + 'T00:00:00');
+  const [year, month, day] = dateStr.split('-').map(Number);
+  return new Date(year, month - 1, day);
 }
 
 /**
