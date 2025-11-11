@@ -6,7 +6,7 @@
     onChange: (date: string) => void;
   }
 
-  let { date = $bindable(''), onChange }: Props = $props();
+  let { date, onChange }: Props = $props();
 
   function changeDate(days: number) {
     const currentDate = parseDate(date);
